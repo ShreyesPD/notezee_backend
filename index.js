@@ -8,6 +8,9 @@ const port = process.env.PORT
 
 connectToDB();
 
+app.use(express.json())
+
+//Routes
 app.use('/api/auth', require('./routes/authRoutes'))
 app.use('/api/notes', require('./routes/notesRoutes'))
 
