@@ -1,0 +1,1 @@
+mongodb+srv://shreyespd12:sFDh8UsDqzmnPOn7@notezee.ejrjchw.mongodb.net/notezee?retryWrites=true&w=majority&appName=notezee
