@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../models/User')
-const { query, validationResult, body } = require('express-validator');
+const { validationResult, body } = require('express-validator');
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const fetchuser = require('../middleware/fetchuser')
@@ -59,6 +59,7 @@ router.post('/createuser',
     }
 )
 
+
 //Route 2: authenticate a user
 router.post('/login',
     [
@@ -101,6 +102,7 @@ router.post('/login',
     }
 )
 
+
 //Route 3: get loggedIn user details
 router.post('/getuser', fetchuser, async (req, res) => {
     try {
@@ -116,4 +118,4 @@ router.post('/getuser', fetchuser, async (req, res) => {
 )
 
 
-module.exports = router 
+module.exports = router

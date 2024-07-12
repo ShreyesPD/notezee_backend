@@ -17,3 +17,4 @@ app.use('/api/notes', require('./routes/notesRoutes'))
 app.listen(port, () => {
     console.log(`app listening at port number ${port}`)
 })
+
